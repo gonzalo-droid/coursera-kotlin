@@ -3,8 +3,8 @@ files:
 - name: src/nicestring/NiceString.kt
   visible: true
   placeholders:
-  - offset: 50
-    length: 826
+  - offset: 81
+    length: 580
     placeholder_text: TODO()
     initial_state:
       length: 6
@@ -201,4 +201,8 @@ files:
   learner_created: false
 feedback_link: https://www.coursera.org/learn/kotlin-for-java-developers/programming/hlugM/nice-string/discussions
 status: Unchecked
+feedback:
+  message: Submission successful, please <a href="https://www.coursera.org/learn/kotlin-for-java-developers/programming/hlugM/nice-string/submission">check
+    the status on Coursera</a>
+  time: Tue, 27 Jul 2021 17:00:22 UTC
 record: -1
