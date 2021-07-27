@@ -3,26 +3,17 @@ package nicestring
 import java.security.KeyStore
 
 fun String.isNice(): Boolean {
-    val noBadString = !contains("ba") && !contains("be") && !contains("bu")
-    val hasThreeVowels = count{
-        it == 'a' || it == 'e' || it == 'i' || it == 'o' || it == 'u'
-    } >= 3
+    //this a la extension
+    //it a setOf("ba","be","bu")
+    val noBadString = setOf("ba","be","bu").none { this.contains(it) }
 
-    var hasDouble = false
-    if(length > 1 ){
-        var prevCh: Char? = null
-        this.forEach { ch ->
-            if(ch == prevCh )
-                hasDouble = true
-            prevCh = ch
-        }
-    }
+    val hasThreeVowels = count{it in "aeiou"} >= 3
 
-    var conditions= 0
-    if(noBadString) conditions++
-    if(hasThreeVowels) conditions++
-    if(hasDouble) conditions++
+    var hasDouble = zipWithNext().any{it.first == it.second}
+    //third
+    //(0 until lastIndex).any{ this[it] == this[it+1]}
+    //second option
+    //windowed(2).any { it[0] == it[1] }
 
-    if(conditions >= 2 ) return true
-    return false
+    return listOf(noBadString, hasThreeVowels, hasDouble).count { it }  >= 2
 }
