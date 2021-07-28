@@ -3,7 +3,9 @@ package taxipark
 data class TaxiPark(
         val allDrivers: Set<Driver>,
         val allPassengers: Set<Passenger>,
-        val trips: List<Trip>)
+        val trips: List<Trip>){
+
+}
 
 data class Driver(val name: String)
 data class Passenger(val name: String)
