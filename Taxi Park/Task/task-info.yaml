@@ -40,8 +40,8 @@ files:
     initialized_from_dependency: false
     selected: true
     status: Unchecked
-  - offset: 534
-    length: 163
+  - offset: 698
+    length: 0
     placeholder_text: TODO()
     initial_state:
       length: 6
@@ -49,7 +49,7 @@ files:
     initialized_from_dependency: false
     selected: true
     status: Unchecked
-  - offset: 1079
+  - offset: 864
     length: 142
     placeholder_text: TODO()
     initial_state:
@@ -58,7 +58,7 @@ files:
     initialized_from_dependency: false
     selected: true
     status: Unchecked
-  - offset: 1962
+  - offset: 1960
     length: 0
     placeholder_text: TODO()
     initial_state:
@@ -67,7 +67,7 @@ files:
     initialized_from_dependency: false
     selected: true
     status: Unchecked
-  - offset: 2239
+  - offset: 2237
     length: 190
     placeholder_text: TODO()
     initial_state:
@@ -76,8 +76,8 @@ files:
     initialized_from_dependency: false
     selected: true
     status: Unchecked
-  - offset: 2565
-    length: 502
+  - offset: 2563
+    length: 486
     placeholder_text: TODO()
     initial_state:
       length: 6
@@ -1465,4 +1465,8 @@ files:
   learner_created: false
 feedback_link: https://www.coursera.org/learn/kotlin-for-java-developers/programming/xTPZT/taxi-park/discussions
 status: Unchecked
+feedback:
+  message: Submission successful, please <a href="https://www.coursera.org/learn/kotlin-for-java-developers/programming/xTPZT/taxi-park/submission">check
+    the status on Coursera</a>
+  time: Wed, 28 Jul 2021 04:52:46 UTC
 record: -1
